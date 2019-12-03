@@ -1,0 +1,70 @@
+body {
+  padding: 50px;
+  font: 24px;
+  font-style: italic;
+  font-family:'Times New Roman', Times, serif
+  
+}
+
+
+
+.center{
+  text-align: center;
+}
+
+.login-form input{
+  border: 4px solid rgba(186, 37, 0, 0.842);
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.error{
+  color: rgb(255, 0, 0);
+  font-size: 22px;
+
+}
+
+.logout{
+  display: none;
+ 
+}
+
+.profile{
+  cursor: pointer;
+  margin: 0;
+  padding: 10px;
+  z-index: -9999999;
+}
+.profile:hover ~ .logout{
+  display: block;
+  position: absolute;
+  top: 122px;
+  right: 825px;
+  z-index: 999999999;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 20px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

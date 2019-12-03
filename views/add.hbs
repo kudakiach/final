@@ -1,0 +1,26 @@
+<h3>{{{viewTitle}}}</h3>
+<div>{{{success}}}</div>
+<form action="./addfile" method="post" autocomplete="off">
+	<!-- <input type="hidden" name="_id" value="{{employee._id}}"> -->
+	<div class="form-group">
+		<label>filename</label>
+		<input type="text" name="filename" class="form-control" placeholder="File Name" value="">
+	</div>
+	<div class="form-group">
+		<label>description</label>
+		<textarea class="form-control" name="description"></textarea>
+	</div>
+	<div class="row">
+		<div class="col-md-6 form-group"><label>price</label>
+				<input type="text" name="price" class="form-control" placeholder="Price" value=""></div>
+		<div class="form-group col-md-6">
+			<label>status</label>
+			<input type="text" name="status" class="form-control" placeholder="status" value="">
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<button type="submit" class="btn btn-info"><i class="fa fa-database"></i>  Submit</button>
+		
+	</div>
+</form>
